@@ -9,7 +9,7 @@ node{
         echo "the branch name is: ${env.BRANCH_NAME}"
         echo "the node name is: ${env.NODE_NAME}"
         properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), [$class: 'JobLocalConfiguration', changeReasonComment: '']])
-
+        buildName 'dev-#${BUILD_NUMBER}'
 
     
     stage('configuring git'){
