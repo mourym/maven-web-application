@@ -35,7 +35,7 @@ def sendSlackNotifications(String buildStatus = 'STARTED') {
 
   // Send notifications 
 //add parameter channel to change chanell name
-  slackSend (color: colorCode, message: summary,channel:'#citibank')
+  slackSend (color: colorCode, message: summary,channel:'#jenkins-notifications')
 }
 
     
