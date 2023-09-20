@@ -50,7 +50,7 @@ node{
             }
     stage('maven build'){
         
-        sh "$mavenHome/bin/mvn clean pack"
+        sh "$mavenHome/bin/mvn clean package"
         
     }
     /*
