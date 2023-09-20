@@ -1,16 +1,3 @@
-node{
-    
-    
-    def mavenHome= tool name: 'maven3.9.4'
-
-
-    echo "the build number is : ${env.BUILD_NUMBER}"
-        echo "the job name is : ${env.JOB_NAME}"
-        echo "the branch name is: ${env.BRANCH_NAME}"
-        echo "the node name is: ${env.NODE_NAME}"
-        properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), [$class: 'JobLocalConfiguration', changeReasonComment: '']])
-        buildName 'dev-#${BUILD_NUMBER}'
-
 def sendSlackNotifications(String buildStatus = 'STARTED') {
   // build status of null means successful
   buildStatus =  buildStatus ?: 'SUCCESSFUL'
@@ -38,9 +25,22 @@ def sendSlackNotifications(String buildStatus = 'STARTED') {
   slackSend (color: colorCode, message: summary,channel:'#jenkins-notifications')
 }
 
-    
 
-    try{
+node{
+    
+    
+    def mavenHome= tool name: 'maven3.9.4'
+
+
+    echo "the build number is : ${env.BUILD_NUMBER}"
+        echo "the job name is : ${env.JOB_NAME}"
+        echo "the branch name is: ${env.BRANCH_NAME}"
+        echo "the node name is: ${env.NODE_NAME}"
+        properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), [$class: 'JobLocalConfiguration', changeReasonComment: '']])
+        buildName 'dev-#${BUILD_NUMBER}'
+
+
+   try{
     stage('configuring git'){
         
         git credentialsId: 'd3d38961-1977-46a3-9bb4-69e86f0a510c', url: 'https://github.com/mourym/maven-web-application.git'
