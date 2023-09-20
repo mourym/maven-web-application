@@ -29,7 +29,7 @@ def sendSlackNotifications(String buildStatus = 'STARTED') {
 node{
     
     
-    def mavenHome= tool name: 'maven3.9.4'
+    def mavenHome= tool name: 'maven3.9.'
 
 
     echo "the build number is : ${env.BUILD_NUMBER}"
