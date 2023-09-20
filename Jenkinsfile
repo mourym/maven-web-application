@@ -41,6 +41,8 @@ node{
 
 
    try{
+     sendSlackNotifications('STARTED')
+
     stage('configuring git'){
         
         git credentialsId: 'd3d38961-1977-46a3-9bb4-69e86f0a510c', url: 'https://github.com/mourym/maven-web-application.git'
