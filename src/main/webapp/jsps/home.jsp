@@ -9,8 +9,8 @@
 </head>
 </head>
 <body>
-<h1 align="center"> *Welcome to Mithun Technologies Private Limited. Bengaluru,Marathahalli, 560067 **      </h1>
-<h1 align="center"> Mithun Technologies- Very Good Training center for DevOps with AWS in Maratha Halli Bangalore India and also for Job Assitance Job Support also...Teaching Real Time scnerios edited by mourya and commited the code to docker changes made</h1>
+<h1 align="center"> *welcome to tomcat demo **      </h1>
+<h1 align="center"> tomcat installation</h1>
 <hr>
 <br>
 	<h1><h3> Server Side IP Address </h3><br>
@@ -34,13 +34,9 @@ out.println("Server Host Name :: "+inetAddress.getHostName());
 		<img src="images/mithunlogo.jpg" alt="" width="100">
 	</span>
 	<span style="font-weight: bold;">
-		Mithun Technologies, 
-		Martha Halli, Above ICICI Bank, Beside Meghana Foods,
-		Bangalore,
-		+91-9980923226,+91-9900012028
-		devopstrainingblr@gmail.com
+		hello everyone
 		<br>
-		<a href="mailto:devopstrainingblr@gmail.com">Mail to Mithun Technologies</a>
+		<a href="mailto:devopstrainingblrsdd@gmail.com">Mail to Mithun Technologies</a>
 	</span>
 </div>
 <hr>
@@ -48,7 +44,6 @@ out.println("Server Host Name :: "+inetAddress.getHostName());
 <hr>
 <hr>
 <p align=center>Mithun Technologies - Consultant, Training, Development Center.</p>
-<p align=center><small>Copyrights 2022 by <a href="http://mithuntechnologies.com/">Mithun Technologies,Bengaluru</a> </small></p>
 
 </body>
 </html>
